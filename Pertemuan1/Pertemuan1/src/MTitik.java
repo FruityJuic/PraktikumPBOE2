@@ -1,8 +1,8 @@
 
     /* Nama File    : MTitik.java
  * Deskripsi    : Main class untuk menjalankan class Titik
- * Pembuat      : 
- * Tanggal      : 
+ * Pembuat      : Rahmat Argyandha Aminuddin
+ * Tanggal      : 19 Februari 2026
  */
 public class MTitik {
     public static void main(String[] args) {
