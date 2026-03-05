@@ -15,8 +15,8 @@ public class MataKuliah {
         this.nama = nama;
         this.sks = sks;
     }
-
-    public String GetidMatkul(){
+    // selektor
+    public String getNamaMataKuliah(){
         return this.idMatkul;
     }
     public String Getnama(){

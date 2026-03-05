@@ -88,5 +88,7 @@ public class Mahasiswa {
         System.out.println("Nama: " + nama);
         System.out.println("Prodi: " + prodi);
     }
-    
+    public int getJumlahMatkul() {
+        return this.listMatKul.size();
+    }
 }
