@@ -11,7 +11,7 @@ public class Pegawai {
 
 
    // konstruktor
-   public Pegawai (String NIP, String nama, LocalDate tanggal_lahir, int TMT, int gajipokok) {
+   public Pegawai (String NIP, String nama, LocalDate tanggal_lahir, int TMT, double gajipokok) {
           this.NIP = NIP;
           this.nama = nama;
           this.tanggal_lahir = tanggal_lahir;
@@ -19,22 +19,30 @@ public class Pegawai {
           this.gajipokok = gajipokok;
 
    }
+   public Pegawai () {
+          this.NIP = "kosong";
+          this.nama = "nama";
+          this.tanggal_lahir = LocalDate.of(2000, 1, 1);
+          this.TMT = 0;
+          this.gajipokok = 0.0;
+   }
+
 
    // getter dan setter
    public String getNIP() {
-        return this.NIP;
+        return NIP;
    }
    public String getNama() {
-        return this.nama;
+        return nama;
    }
    public LocalDate getTanggal_lahir() {
-        return this.tanggal_lahir;
+        return tanggal_lahir;
    }
    public int getTMT() {
-        return this.TMT; 
+        return TMT; 
    }
    public double getGajiPokok() {
-        return this.gajipokok;
+        return gajipokok;
    }
      public void printInfo()
     {
@@ -43,5 +51,6 @@ public class Pegawai {
         System.out.println("tanggal lahir: " + tanggal_lahir);
         System.out.println("TMT: " + TMT);
         System.out.println("Gaji Pokok: " + gajipokok);
+
     }
 }
