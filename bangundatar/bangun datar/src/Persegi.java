@@ -1,4 +1,10 @@
-public class Persegi extends BangunDatar
+    /* Nama File    : MTitik.java
+ * Deskripsi    : Main class untuk menjalankan class Titik
+ * Pembuat      : Rahmat Argyandha Aminuddin
+ * Tanggal      : 19 Februari 2026
+ */
+
+public class Persegi extends BangunDatar implements resize
 {
     private double sisi;
 
@@ -6,6 +12,9 @@ public class Persegi extends BangunDatar
     {
         super();
         setJmlSisi(4);
+    }
+    public Persegi(int sisi) {
+        this.sisi = sisi;
     }
 
     public Persegi(double sisi, String warna, String border)
@@ -51,5 +60,20 @@ public class Persegi extends BangunDatar
         System.out.println("Sisi: " + sisi);
         System.out.println("Luas: " + getLuas());
         System.out.println("Keliling: " + getKeliling());
+    }
+
+    @Override
+    public void zoomIn() {
+        sisi = sisi * 1.1;
+    }
+
+    @Override 
+    public void zoomOut() {
+        sisi = sisi * 0.9;
+    }
+
+    @Override 
+    public void zoom(int percent) {
+        sisi = sisi * percent/100;
     }
 }

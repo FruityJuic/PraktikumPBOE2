@@ -10,10 +10,15 @@ public class DosenTamu extends Dosen {
         this.NIDK = NIDK;
         this.BUP = hitungBUP();
     }
-    public String GetNIDK() {
+    public DosenTamu() {
+        super();
+        this.NIDK = "";
+        this.BUP = "";
+    }
+    public String getNIDK() {
         return NIDK;
     }
-    public String BUP() {
+    public String getBUP() {
         return BUP;
     }
      public String hitungBUP(int usiaPensiun) {
