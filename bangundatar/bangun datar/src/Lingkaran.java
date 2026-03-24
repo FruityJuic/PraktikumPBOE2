@@ -1,4 +1,10 @@
-public class Lingkaran extends BangunDatar
+/* Nama File    : Lingkaran.java
+ * Deskripsi    : File berisi kode konstruksi,getter dan setter Lingkaran
+ * Pembuat      : Rahmat Argyandha Aminuddin
+ * Tanggal      : 24 Maret 2026
+ */
+
+public class Lingkaran extends BangunDatar 
 {
     private double jari;
 
@@ -8,6 +14,9 @@ public class Lingkaran extends BangunDatar
         setJmlSisi(0); // Lingkaran direpresentasikan memiliki 0 sisi lurus
     }
 
+    public Lingkaran(int jari) {
+        this.jari = jari;
+    }
     public Lingkaran(double diameter, String warna, String border)
     {
         super(0, warna, border);

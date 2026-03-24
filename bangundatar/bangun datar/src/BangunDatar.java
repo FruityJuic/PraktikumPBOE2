@@ -1,4 +1,9 @@
-public class BangunDatar
+/* Nama File    : BangunDatar.java
+ * Deskripsi    : File berisi kode konstruksi,getter dan setter bangundatar
+ * Pembuat      : Rahmat Argyandha Aminuddin
+ * Tanggal      : 24 Maret 2026
+ */
+public abstract class BangunDatar
 {
     // Menggunakan protected agar bisa diakses langsung oleh kelas turunannya (Bagian 4)
     protected int jmlSisi;
@@ -6,11 +11,9 @@ public class BangunDatar
     protected String border;
     protected static int counterBangunDatar = 0; // Menghitung jumlah objek
 
-    // Konstruktor default
-    public BangunDatar()
-    {
-        counterBangunDatar++;
-    }
+    public abstract double getLuas();
+    public abstract double getKeliling();
+
 
     // Konstruktor berparameter (Bagian 2)
     public BangunDatar(int jmlSisi, String warna, String border)
@@ -20,6 +23,16 @@ public class BangunDatar
         this.border = border;
         counterBangunDatar++;
     }
+        // Konstruktor default
+    public BangunDatar() {
+        this.jmlSisi = 0;
+        this.warna = "Putih";
+        this.border = "Hitam";
+        System.out.println("Objek BangunDatar dibuat!");
+    }
+    public boolean isEqualLuas(BangunDatar X){ 
+        return this.getLuas() == X.getLuas(); 
+    } 
 
     // Getter & Setter
     public int getJmlSisi()
