@@ -1,12 +1,32 @@
-// package Latihan;
+/* Nama File    : MManusia.java
+ * Deskripsi    : File berisi implemetasi dari semua file
+ * Pembuat      : Rahmat Argyandha Aminuddin
+ * Tanggal      : 24 Maret 2026
+ */
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 public class MManusia {
     public static void main(String[] args) {
         // Inisialisasi objek sesuai contoh modul
-        PNS p1 = new PNS("Satriyo", "01-04-2006", "Jl. Seroja", 15000000, "198302032006041002");
-        Pengusaha pe1 = new Pengusaha("Adhy", "01-01-2000", "Jl. Air", 55000000, "2000-556-773-212");
-        Petani pt1 = new Petani("Nugraha", "09-01-1977", "Jl. Bunga 9 Tembalang", 5000000, "Wonogiri");
-        PNS p2 = new PNS("Panji", "01-04-2010", "Tembalang", 10000000, "198004212010041002");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+
+        PNS p1 = new PNS("Satriyo", 
+                        LocalDate.parse("01-04-2006", formatter), 
+                        "Jl. Seroja", 15000000, "198302032006041002");
+
+        Pengusaha pe1 = new Pengusaha("Adhy", 
+                        LocalDate.parse("01-01-2000", formatter), 
+                        "Jl. Air", 55000000, "2000-556-773-212");
+
+        Petani pt1 = new Petani("Nugraha", 
+                        LocalDate.parse("09-01-1977", formatter), 
+                        "Jl. Bunga 9 Tembalang", 5000000, "Wonogiri");
+
+        PNS p2 = new PNS("Panji", 
+                        LocalDate.parse("01-04-2010", formatter), 
+                        "Tembalang", 10000000, "198004212010041002");
+    
 
         p2.setAlamat("Jl. Panorama 111 Tembalang");
 
@@ -32,7 +52,9 @@ public class MManusia {
         // Menampilkan informasi lengkap
         System.out.println("=== Detail Informasi ===");
         p1.cetakInfo();
+        System.out.println("=== Detail Informasi ===");
         pe1.cetakInfo();
+        System.out.println("=== Detail Informasi ===");
         pt1.cetakInfo();
     }
 }

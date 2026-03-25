@@ -1,9 +1,8 @@
-    /* Nama File    : MTitik.java
- * Deskripsi    : Main class untuk menjalankan class Titik
+/* Nama File    : Persegi.java
+ * Deskripsi    : File berisi kode konstruksi,getter dan setter persegi
  * Pembuat      : Rahmat Argyandha Aminuddin
- * Tanggal      : 19 Februari 2026
+ * Tanggal      : 24 Maret 2026
  */
-
 public class Persegi extends BangunDatar implements resize
 {
     private double sisi;
