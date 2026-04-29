@@ -43,6 +43,9 @@ public class MManusia {
         System.out.println("Pajak Petani pt1 = " + pt1.hitungPajak());
         System.out.println();
 
+        p2.setNama("Rahmat Argyandha A");
+        p2.setPendapat(200000);
+
         // Menampilkan masa kerja
         System.out.println("Masa Kerja p1 = " + p1.hitungMasaKerja());
         System.out.println("Masa Kerja pe1 = " + pe1.hitungMasaKerja());
@@ -56,5 +59,7 @@ public class MManusia {
         pe1.cetakInfo();
         System.out.println("=== Detail Informasi ===");
         pt1.cetakInfo();
+        System.out.println("=== Detail Informasi ===");
+        p2.cetakInfo();
     }
 }
