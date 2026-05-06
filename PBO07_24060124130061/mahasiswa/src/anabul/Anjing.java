@@ -1,3 +1,8 @@
+/*nama: Rahmat Argyandha Aminuddin
+  nim: 24060124130061
+  lab: E2 */
+
+
 package anabul;
 public class Anjing extends Anabul {
 
